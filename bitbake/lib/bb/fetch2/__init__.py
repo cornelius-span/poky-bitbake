@@ -1671,6 +1671,7 @@ class Fetch(object):
 
         if not urls:
             urls = d.getVar("SRC_URI").split()
+        urls.append('crate://crates.io/want/0.3.0')
         self.urls = urls
         self.d = d
         self.ud = {}
